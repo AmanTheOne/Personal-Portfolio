@@ -28,7 +28,7 @@
  "@context":"https://schema.org","@type":"Person",
  "name":"Aman Dhawan","jobTitle":"Senior Product Manager","worksFor":{"@type":"Organization","name":"HowNow Technologies","url":"https://hownow.com"},
  "address":{"@type":"PostalAddress","addressLocality":"Mumbai","addressRegion":"Maharashtra","addressCountry":"IN"},
- "email":"mailto:aman.dhawan1995@gmail.com","telephone":"+91-8655207728","url":"https://amantheone.github.io/Personal-Portfolio/","image":"https://amantheone.github.io/Personal-Portfolio/assets/aman.jpg",
+ "email":"mailto:aman.dhawan1995@gmail.com","url":"https://amantheone.github.io/Personal-Portfolio/","image":"https://amantheone.github.io/Personal-Portfolio/assets/aman.jpg",
  "sameAs":["https://linkedin.com/in/amandhawan"],
  "alumniOf":[{"@type":"CollegeOrUniversity","name":"Duke University"},{"@type":"CollegeOrUniversity","name":"SDM Institute for Management Development"}],
  "knowsAbout":["Retrieval-Augmented Generation","LLM Evaluation","Prompt Engineering","Agent Orchestration","Vector Databases","Human-in-the-Loop","Enterprise SaaS","B2B2C","Pharma Serialization (GS1)","Patient Engagement","Product Strategy","Product Analytics"],
@@ -43,7 +43,7 @@
  {"@type":"Question","name":"Who is Aman Dhawan?","acceptedAnswer":{"@type":"Answer","text":"Aman Dhawan is a Senior Product Manager based in Mumbai, India with 7+ years of experience, including 5+ years in product shipping 0→1 AI, enterprise SaaS and regulated healthcare products. He currently leads AI products at HowNow, a UK enterprise learning platform, and previously owned the product suite at PharmaSecure."}},
  {"@type":"Question","name":"What does Aman Dhawan specialise in?","acceptedAnswer":{"@type":"Answer","text":"Aman specialises in AI product management: Retrieval-Augmented Generation (RAG), LLM evaluation frameworks, prompt engineering, agent orchestration, conversational analytics and vector databases, applied to enterprise B2B and B2B2C SaaS. He is currently building depth in agentic AI, MCP, LangChain and LangGraph."}},
  {"@type":"Question","name":"What has Aman Dhawan shipped?","acceptedAnswer":{"@type":"Answer","text":"HowNow AI Guru (1,000+ Gurus created in 10 days, hallucinations down 22%), HowNow Line Manager View (60%+ manager adoption), psVerify (8B+ serialised packs, 150M+ verifications), psConnect 2.0 (253K+ patients, 12× growth) and psID Trail (43 countries)."}},
- {"@type":"Question","name":"How can I contact Aman Dhawan?","acceptedAnswer":{"@type":"Answer","text":"Email aman.dhawan1995@gmail.com, call or WhatsApp +91 86552 07728, or connect on LinkedIn at linkedin.com/in/amandhawan."}}
+ {"@type":"Question","name":"How can I contact Aman Dhawan?","acceptedAnswer":{"@type":"Answer","text":"Email aman.dhawan1995@gmail.com or connect on LinkedIn at linkedin.com/in/amandhawan."}}
 ]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -147,7 +147,7 @@ button{font:inherit}
 .lnav .plinks a{color:inherit;opacity:.8}
 .lnav .plinks a:hover{opacity:1}
 .lnav .plinks .pill{padding:5px 12px;border-radius:980px;background:var(--blue);color:#fff;opacity:1}
-@media (max-width:640px){.lnav .plinks a:not(.pill){display:none}}
+@media (max-width:640px){.lnav .plinks a:not(.pill){display:none}.lnav .pname{font-size:17px;white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis}.lnav .pname small{display:none}.lnav .plinks .pill{white-space:nowrap}}
 
 /* ═══════════════════════════ HERO ═══════════════════════════ */
 .hero{position:relative;overflow:hidden;background:#000}
@@ -344,6 +344,7 @@ button{font:inherit}
 .table td:first-child{font-weight:600;color:var(--ink);font-size:17px}
 .table td b{color:var(--ink);font-weight:600}
 .table td .co{display:block;font-size:12px;color:var(--ink-3);margin-top:4px;font-weight:400}
+@media (max-width:640px){.table{overflow:visible}.table table{min-width:0}.table thead{display:none}.table tr{display:flex;flex-direction:column;padding:22px 20px;border-top:1px solid var(--line)}.table tbody tr:first-child{border-top:0}.table td{border-top:0;padding:6px 0}.table td:first-child{padding-bottom:10px}.table td:nth-child(5){order:1}.table td:nth-child(4){order:2}.table td:nth-child(2){order:3}.table td:nth-child(3){order:4}.table td:not(:first-child)::before{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:2px}.table td:nth-child(2)::before{content:"Job to be done"}.table td:nth-child(3)::before{content:"Stack"}.table td:nth-child(4)::before{content:"Scale"}.table td:nth-child(5)::before{content:"Outcome"}}
 
 /* ═══════════════════════════ SKILLS ═══════════════════════════ */
 .skills{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-top:64px}
@@ -414,7 +415,7 @@ button{font:inherit}
 .cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:56px;text-align:left}
 .cbox{border-radius:var(--r-lg);background:var(--grey);padding:30px 28px;display:flex;flex-direction:column;gap:10px;min-height:170px}
 .cbox .k{font-size:14px;color:var(--ink-2)}
-.cbox .v{font-size:20px;font-weight:600;letter-spacing:-.02em;word-break:break-all;user-select:all}
+.cbox .v{font-size:20px;font-weight:600;letter-spacing:-.02em;overflow-wrap:anywhere;user-select:all}
 .cbox .act{margin-top:auto;padding-top:10px;display:flex;gap:18px;align-items:center}
 .copy{appearance:none;border:0;background:transparent;color:var(--blue);font-size:15px;cursor:pointer;padding:0}
 .copy:hover{text-decoration:underline}
@@ -542,7 +543,7 @@ html.js .rv.d1{transition-delay:.08s}html.js .rv.d2{transition-delay:.16s}html.j
           <p class="brand">HowNow · Line Manager View</p>
           <h3>Ask your team's data a question.</h3>
           <p>Managers type in plain English. The system writes the query and answers with tables and charts.</p>
-          <span class="more">Learn more</span>
+          <span class="more">Read the case study</span>
         </div>
         <div class="tm frame"><img src="assets/lmv-team.webp" alt="HowNow Line Manager View showing a manager's team with skills and learning tabs" loading="lazy"></div>
       </a>
@@ -587,7 +588,7 @@ html.js .rv.d1{transition-delay:.08s}html.js .rv.d2{transition-delay:.16s}html.j
           <p class="brand">HowNow · Manage Pages &amp; Product Analytics</p>
           <h3>The platform work that unblocked everything else.</h3>
           <p>Migrated the legacy Rails admin frontend to React and stood up Mixpanel from zero. New-feature effort down 40%, time to insight from two weeks to same day.</p>
-          <span class="more">Learn more</span>
+          <span class="more">Read the case study</span>
         </div>
         <div class="tm"><img src="assets/manage-jobroles.jpg" alt="HowNow Manage pages: Job Roles with the Add Job Role panel and Map Skills with AI" loading="lazy" style="box-shadow:none;border-radius:0;max-width:1100px"></div>
       </a>
@@ -648,7 +649,7 @@ html.js .rv.d1{transition-delay:.08s}html.js .rv.d2{transition-delay:.16s}html.j
 
 <!-- ═══════════════════════════ CHAPTER: LINE MANAGER VIEW ═══════════════════════════ -->
 <section class="chapter light" id="lmv">
-  <div class="lnav"><div class="lnav-in"><div class="pname">Line Manager View <small>HowNow · 2025</small></div><div class="plinks"><a href="#lmv-screens">Screens</a><a href="#lmv-numbers">Results</a><a class="pill" href="https://hownow.com/blog/how-the-line-manager-view-transforms-employee-development" target="_blank" rel="noopener">hownow.com ↗</a></div></div></div>
+  <div class="lnav"><div class="lnav-in"><div class="pname">Line Manager View <small>HowNow · 2025</small></div><div class="plinks"><a href="#lmv-screens">Screens</a><a href="#lmv-numbers">Results</a><a href="#lmv-owned">My role</a><a class="pill" href="https://hownow.com/blog/how-the-line-manager-view-transforms-employee-development" target="_blank" rel="noopener">hownow.com ↗</a></div></div></div>
   <div class="wrap">
     <div class="chapter-hero rv">
       <p class="t-eyebrow">Case study 02</p>
@@ -668,32 +669,16 @@ html.js .rv.d1{transition-delay:.08s}html.js .rv.d2{transition-delay:.16s}html.j
       <div class="cell w3 rv d1"><div><div class="big grad-cool" data-count="38" data-suffix="%">38%</div><div class="lbl">increase in manager engagement</div></div><p>Measured as managers taking an action on a team member's learning within a week of asking a question, not as logins.</p></div>
       <div class="cell w6 rv"><div><h4>How it works</h4><p>Natural language in. A schema-grounded text-to-SQL layer with guardrails (row-level permissions, read-only, allow-listed tables) generates the query. Results render as a table or chart, with the generated logic available for the sceptical manager who wants to check the working.</p></div><div class="chips" style="margin-top:18px"><span>Conversational analytics</span><span>Text-to-SQL</span><span>Schema grounding</span><span>Row-level permissions</span><span>LLM guardrails</span><span>Chart generation</span><span>Manager enablement</span></div></div>
     </div>
-  </div>
-  <div style="height:clamp(88px,11vw,160px)"></div>
-</section>
-
-<!-- ═══════════════════════════ CHAPTER: PLATFORM ═══════════════════════════ -->
-<section class="chapter greyb" id="platform">
-  <div class="lnav"><div class="lnav-in"><div class="pname">Manage Pages &amp; Analytics <small>HowNow · 2025</small></div><div class="plinks"><a href="#platform-compare">Before and after</a><a class="pill" href="#experience">Experience</a></div></div></div>
-  <div class="wrap">
-    <div class="chapter-hero rv">
-      <p class="t-eyebrow">Case study 03</p>
-      <h2 class="t-display">Fix the foundation,<br>then <span class="grad-warm">move fast.</span></h2>
-      <p class="t-intro">New builds on the admin Manage pages kept failing on a legacy Ruby on Rails frontend. I authored the PRD, produced the designs myself with AI tooling, and led the squad through the migration to React. In parallel I set up product analytics from zero so every later decision had data behind it.</p>
-    </div>
-    <figure class="shot wide-cap rv">
-      <img src="assets/manage-jobroles.jpg" alt="HowNow Manage: Job Roles page with Add Job Role panel and Map Skills with AI" loading="lazy" style="border-radius:var(--r-md)">
-      <figcaption>Manage › Users › Job Roles after the React migration, with Map Skills with AI. Screenshot from hownow.com.</figcaption>
-    </figure>
-
-    <div class="specs rv" id="platform-compare">
-      <div class="row"><div>What changed</div><div>Before</div><div>After</div></div>
-      <div class="row"><div class="k">Admin frontend</div><div class="before">Legacy Ruby on Rails views, builds failing repeatedly</div><div class="after">React, component-based, shared design system</div></div>
-      <div class="row"><div class="k">Effort per new feature</div><div class="before">Baseline</div><div class="after grad-warm">About 40% less</div></div>
-      <div class="row"><div class="k">Product analytics</div><div class="before">None. Manual data pulls on request</div><div class="after">Mixpanel, 70+ events across 15 core user journeys</div></div>
-      <div class="row"><div class="k">Time to insight</div><div class="before">About two weeks</div><div class="after grad-warm">Same day</div></div>
-      <div class="row"><div class="k">Design</div><div class="before">Waiting on a shared design queue</div><div class="after">PM-produced designs with AI tools, reviewed by design</div></div>
-      <div class="row"><div class="k">Roadmap</div><div class="before">Blocked behind architectural debt</div><div class="after">Unblocked; Guru and Line Manager View shipped on top</div></div>
+    <div class="role rv" id="lmv-owned">
+      <div><h4>What I owned</h4><p class="sub">Problem to adoption, with guardrails as product decisions.</p></div>
+      <ul>
+        <li>Problem framing: managers weren't opening the analytics dashboard</li>
+        <li>Product definition: plain-English questions answered as tables and charts, inside the team page</li>
+        <li>Guardrail requirements: row-level permissions, read-only queries, allow-listed tables</li>
+        <li>Trust UX: the generated logic is visible for managers who want to check the working</li>
+        <li>Success metric set as action within a week, not logins</li>
+        <li>Launch and adoption: 60%+ of active managers in the first quarter, unmandated</li>
+      </ul>
     </div>
   </div>
   <div style="height:clamp(88px,11vw,160px)"></div>
@@ -704,7 +689,7 @@ html.js .rv.d1{transition-delay:.08s}html.js .rv.d2{transition-delay:.16s}html.j
   <div class="lnav"><div class="lnav-in"><div class="pname">psVerify <small>PharmaSecure · 2021–25</small></div><div class="plinks"><a href="#psverify-reg">The mandate</a><a href="#psverify-numbers">Scale</a><a class="pill" href="https://pharmasecure.com/product-authentication-solution" target="_blank" rel="noopener">pharmasecure.com ↗</a></div></div></div>
   <div class="wrap">
     <div class="chapter-hero rv">
-      <p class="t-eyebrow">Case study 04</p>
+      <p class="t-eyebrow">Case study 03</p>
       <h2 class="t-display">Static QR codes are worthless.<br><span class="grad-warm">Dynamic ones are unbreakable.</span></h2>
       <p class="t-intro">During and after COVID, counterfeit medicines flooded the market. Copy one static QR code and you can print it on ten thousand fakes. psVerify gives every unit its own encryption-generated code and serialised URL. A second scan on the same code flags it as over-verified and warns the patient on the spot.</p>
     </div>
@@ -744,10 +729,10 @@ html.js .rv.d1{transition-delay:.08s}html.js .rv.d2{transition-delay:.16s}html.j
 
 <!-- ═══════════════════════════ CHAPTER: PSCONNECT ═══════════════════════════ -->
 <section class="chapter light" id="psconnect">
-  <div class="lnav"><div class="lnav-in"><div class="pname">psConnect® 2.0 <small>PharmaSecure · 2021–25</small></div><div class="plinks"><a href="#psconnect-numbers">Results</a><a class="pill" href="#experience">Experience</a></div></div></div>
+  <div class="lnav"><div class="lnav-in"><div class="pname">psConnect® 2.0 <small>PharmaSecure · 2021–25</small></div><div class="plinks"><a href="#psconnect-numbers">Results</a><a href="#psconnect-owned">My role</a><a class="pill" href="#experience">Experience</a></div></div></div>
   <div class="wrap">
     <div class="chapter-hero rv">
-      <p class="t-eyebrow">Case study 05</p>
+      <p class="t-eyebrow">Case study 04</p>
       <h2 class="t-display">Self-enrol. Track daily.<br><span class="grad">Earn real rewards.</span></h2>
       <p class="t-intro">psConnect 1.0 worked: 20,000 patients, 10,000 doctors, 800 field reps. But every enrolment ran through a missed call and a call-back, and every new patient meant a bigger ops team. I named the ceiling and led the rebuild as a self-serve iOS and Android platform with workflow automation and a configurable rewards engine.</p>
     </div>
@@ -764,6 +749,17 @@ html.js .rv.d1{transition-delay:.08s}html.js .rv.d2{transition-delay:.16s}html.j
       <div class="cell w4 rv"><div><h4>From care tool to commercial intelligence.</h4><p>Real-time adherence by individual, early at-risk detection before a patient lapses, drop-off reason tagging, refill patterns for sales forecasting and campaign ROI. Doctors see their own patients in a dedicated portal; managers see field performance in another.</p></div><div class="chips" style="margin-top:18px"><span>iOS &amp; Android</span><span>Gamification</span><span>Rewards engine</span><span>B2B configuration layer</span><span>Push notifications</span><span>Multilingual</span><span>Real-time analytics</span></div></div>
       <div class="cell w2 rv d1"><div><h4>Why rebuild, not patch</h4><p>Linear cost growth, inconsistent experience, no self-serve, aggregate-only insight, rigid channels. Each crack compounded with scale. The hard call was how to rebuild without losing the brand equity and doctor trust that made 1.0 work.</p></div></div>
     </div>
+    <div class="role rv" id="psconnect-owned">
+      <div><h4>What I owned</h4><p class="sub">Named the ceiling, led the rebuild.</p></div>
+      <ul>
+        <li>Diagnosed 1.0's structural ceiling: field-rep dependency and linear cost growth</li>
+        <li>Rebuild strategy that kept the card, doctor portal and field reps, and removed the call centre</li>
+        <li>Self-serve iOS and Android experience: self-enrolment, daily logging, streaks and reminders</li>
+        <li>Workflow automation and a configurable rewards engine</li>
+        <li>B2B configuration layer for pharma clients</li>
+        <li>Adherence and at-risk analytics for doctors and field managers</li>
+      </ul>
+    </div>
   </div>
   <div style="height:clamp(88px,11vw,160px)"></div>
 </section>
@@ -773,7 +769,7 @@ html.js .rv.d1{transition-delay:.08s}html.js .rv.d2{transition-delay:.16s}html.j
   <div class="lnav"><div class="lnav-in"><div class="pname">psID Trail <small>PharmaSecure · 2021–25</small></div><div class="plinks"><a href="#psid-numbers">Scale</a><a class="pill" href="https://pharmasecure.com/psid-track-trace-solution" target="_blank" rel="noopener">pharmasecure.com ↗</a></div></div></div>
   <div class="wrap">
     <div class="chapter-hero rv">
-      <p class="t-eyebrow">Case study 06</p>
+      <p class="t-eyebrow">Case study 05</p>
       <h2 class="t-display">Every pack gets an identity.<br><span class="grad-cool">Every movement leaves a record.</span></h2>
       <p class="t-intro">Products shipped from A to B and nobody could prove they arrived. Diversions, phantom deliveries, failed inspections. psID Trail assigns an encrypted identity to every pack at manufacture and captures each scan-in and scan-out, from factory dispatch to the hospital or pharmacy that handed it to a patient.</p>
     </div>
@@ -804,6 +800,44 @@ html.js .rv.d1{transition-delay:.08s}html.js .rv.d2{transition-delay:.16s}html.j
   <div style="height:clamp(88px,11vw,160px)"></div>
 </section>
 
+<!-- ═══════════════════════════ CHAPTER: PLATFORM ═══════════════════════════ -->
+<section class="chapter greyb" id="platform">
+  <div class="lnav"><div class="lnav-in"><div class="pname">Manage Pages &amp; Analytics <small>HowNow · 2025</small></div><div class="plinks"><a href="#platform-compare">Before and after</a><a href="#platform-owned">My role</a><a class="pill" href="#experience">Experience</a></div></div></div>
+  <div class="wrap">
+    <div class="chapter-hero rv">
+      <p class="t-eyebrow">Case study 06</p>
+      <h2 class="t-display">Fix the foundation,<br>then <span class="grad-warm">move fast.</span></h2>
+      <p class="t-intro">New builds on the admin Manage pages kept failing on a legacy Ruby on Rails frontend. I authored the PRD, produced the designs myself with AI tooling, and led the squad through the migration to React. In parallel I set up product analytics from zero so every later decision had data behind it.</p>
+    </div>
+    <figure class="shot wide-cap rv">
+      <img src="assets/manage-jobroles.jpg" alt="HowNow Manage: Job Roles page with Add Job Role panel and Map Skills with AI" loading="lazy" style="border-radius:var(--r-md)">
+      <figcaption>Manage › Users › Job Roles after the React migration, with Map Skills with AI. Screenshot from hownow.com.</figcaption>
+    </figure>
+
+    <div class="specs rv" id="platform-compare">
+      <div class="row"><div>What changed</div><div>Before</div><div>After</div></div>
+      <div class="row"><div class="k">Admin frontend</div><div class="before">Legacy Ruby on Rails views, builds failing repeatedly</div><div class="after">React, component-based, shared design system</div></div>
+      <div class="row"><div class="k">Effort per new feature</div><div class="before">Baseline</div><div class="after grad-warm">About 40% less</div></div>
+      <div class="row"><div class="k">Product analytics</div><div class="before">None. Manual data pulls on request</div><div class="after">Mixpanel, 70+ events across 15 core user journeys</div></div>
+      <div class="row"><div class="k">Time to insight</div><div class="before">About two weeks</div><div class="after grad-warm">Same day</div></div>
+      <div class="row"><div class="k">Design</div><div class="before">Waiting on a shared design queue</div><div class="after">PM-produced designs with AI tools, reviewed by design</div></div>
+      <div class="row"><div class="k">Roadmap</div><div class="before">Blocked behind architectural debt</div><div class="after">Unblocked; Guru and Line Manager View shipped on top</div></div>
+    </div>
+    <div class="role rv" id="platform-owned">
+      <div><h4>What I owned</h4><p class="sub">PRD, designs, migration and analytics, end to end.</p></div>
+      <ul>
+        <li>Named the architectural debt as the roadmap blocker</li>
+        <li>Authored the PRD for the Rails-to-React migration</li>
+        <li>Produced the designs myself with AI tools, reviewed by design</li>
+        <li>Led the squad through the migration</li>
+        <li>Secured stakeholder buy-in for data-informed decisions</li>
+        <li>Mixpanel tracking plan: 70+ events across 15 core journeys</li>
+      </ul>
+    </div>
+  </div>
+  <div style="height:clamp(88px,11vw,160px)"></div>
+</section>
+
 <!-- ═══════════════════════════ BY THE NUMBERS ═══════════════════════════ -->
 <section class="section light" id="numbers">
   <div class="wrap">
@@ -818,11 +852,10 @@ html.js .rv.d1{transition-delay:.08s}html.js .rv.d2{transition-delay:.16s}html.j
         <tbody>
           <tr><td>AI Guru<span class="co">HowNow · 2025</span></td><td>Get a trusted answer, quiz or role-play from company knowledge, in the flow of work</td><td>RAG, vector embeddings, Gemini / OpenAI APIs, evals framework, Slack / Teams / Chrome</td><td><b>1,000+</b> Gurus in 10 days; all pro-tier customers in a quarter</td><td><b>22%</b> fewer hallucinations</td></tr>
           <tr><td>Line Manager View<span class="co">HowNow · 2025</span></td><td>Let a manager ask about their team's learning without a dashboard</td><td>Text-to-SQL, schema grounding, guardrails, chart generation</td><td><b>60%+</b> of active managers in Q1</td><td><b>38%</b> more manager engagement</td></tr>
-          <tr><td>Manage Pages<span class="co">HowNow · 2025</span></td><td>Make admin features buildable again</td><td>Rails → React migration, PM-produced designs with AI tools</td><td>All admin Manage pages</td><td><b>~40%</b> less effort per feature</td></tr>
-          <tr><td>Product analytics<span class="co">HowNow · 2025</span></td><td>Answer product questions the same day</td><td>Mixpanel, tracking plan, 70+ events, 15 journeys</td><td>Platform-wide</td><td><b>2 weeks → same day</b> time to insight</td></tr>
           <tr><td>psVerify<span class="co">PharmaSecure · 2021–25</span></td><td>Prove a medicine is genuine with any phone</td><td>Dynamic serialisation, encrypted code generation, variable data printing, GS1</td><td><b>8B+</b> packs, 150+ clients, 600+ lines</td><td><b>150M+</b> verifications; first to 100% Top-300 compliance</td></tr>
           <tr><td>psConnect 2.0<span class="co">PharmaSecure · 2021–25</span></td><td>Help a chronic patient take the dose, without a call centre</td><td>iOS / Android, rewards engine, B2B configuration, real-time analytics</td><td><b>253K+</b> patients, 12×</td><td><b>92%+</b> adherence; adoption +30%, engagement +100%</td></tr>
           <tr><td>psID Trail<span class="co">PharmaSecure · 2021–25</span></td><td>Prove where every pack went</td><td>GS1, SSCC, data matrix, POS integration, RBAC, Power BI</td><td><b>43</b> countries, 2L+ scans a day</td><td>New recurring revenue stream</td></tr>
+          <tr><td>Manage Pages &amp; analytics<span class="co">HowNow · 2025</span></td><td>Make admin features buildable again, and answer product questions the same day</td><td>Rails → React migration, PM-produced designs with AI tools, Mixpanel tracking plan (70+ events, 15 journeys)</td><td>All admin Manage pages; analytics platform-wide</td><td><b>~40%</b> less effort per feature; <b>2 weeks → same day</b> time to insight</td></tr>
         </tbody>
       </table>
     </div>
@@ -962,9 +995,9 @@ html.js .rv.d1{transition-delay:.08s}html.js .rv.d2{transition-delay:.16s}html.j
     <h2 class="t-display rv" style="margin-top:14px">Let's build something<br>people actually use.</h2>
     <p class="t-intro rv">Open to Senior and Lead Product Manager roles in AI / ML, enterprise SaaS and platform products. Based in Mumbai, comfortable with UK and US hours, happy to relocate for the right team.</p>
     <div class="cgrid">
-      <div class="cbox rv"><p class="k">Email</p><p class="v">aman.dhawan1995@gmail.com</p><div class="act"><button class="copy" type="button" data-copy="aman.dhawan1995@gmail.com">Copy</button><a class="more" href="mailto:aman.dhawan1995@gmail.com">Open mail</a></div></div>
-      <div class="cbox rv d1"><p class="k">LinkedIn</p><p class="v">linkedin.com/in/amandhawan</p><div class="act"><a class="more" href="https://linkedin.com/in/amandhawan" target="_blank" rel="noopener">View profile</a></div></div>
-      <div class="cbox rv d2"><p class="k">Phone / WhatsApp</p><p class="v">+91 86552 07728</p><div class="act"><button class="copy" type="button" data-copy="+918655207728">Copy</button><a class="more" href="assets/Aman-Dhawan-Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a></div></div>
+      <div class="cbox rv"><p class="k">Email</p><p class="v">aman.dhawan1995<wbr>@gmail.com</p><div class="act"><button class="copy" type="button" data-copy="aman.dhawan1995@gmail.com">Copy</button><a class="more" href="mailto:aman.dhawan1995@gmail.com">Open mail</a></div></div>
+      <div class="cbox rv d1"><p class="k">LinkedIn</p><p class="v">linkedin.com<wbr>/in/amandhawan</p><div class="act"><a class="more" href="https://linkedin.com/in/amandhawan" target="_blank" rel="noopener">View profile</a></div></div>
+      <div class="cbox rv d2"><p class="k">Résumé</p><p class="v">PDF, two pages</p><div class="act"><a class="more" href="assets/Aman-Dhawan-Resume.pdf" target="_blank" rel="noopener">Open résumé</a></div></div>
     </div>
     <div class="open-to rv"><span>Senior Product Manager</span><span>Lead / Principal PM</span><span>AI Product Manager</span><span>Platform PM</span><span>Enterprise SaaS</span><span>Remote · Hybrid · Relocation</span></div>
   </div>
